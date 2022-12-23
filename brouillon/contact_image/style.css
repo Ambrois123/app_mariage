@@ -204,77 +204,14 @@ h2, h3 {
 /*slides ends*/
 
 
-
 *{
     margin: 0;
     padding: 0;
 }
-.wrapper{
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    position: relative;
-    width: 75%;
-    height: 80vh;
-    overflow: hidden;
-    /* background-color: beige; */
-}
-.image, .contact-form{
-    height: 30rem;
-    float: left;
-    /* box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.7); */
-}
-.image{
-    border: 1px solid black;
-    width: 30%;
-    border-radius:10px 0px 0px 10px ;
-}
-.img-contact{
-    width: 100%;
-    object-fit: cover;
-    border-radius: 9px 0px 0px 10px;
-    height: 100%;
-}
-.contact-form{
-    border: 1px solid black;
-    width: 40%;
-    border-radius: 0px 10px 10px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
 
-.form-group{
-    margin-top: 1.2rem;
-}
-input, textarea{
-    width: 100%;
-}
-.input-action{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
-}
-.contact{
-    padding: 0 1.5rem;  
-}
 .phone_call{
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+    margin-top: 20px;
 }
-    .phone-number{
-        font-weight: 800;
-        font-size: 2rem;
-    }
-    .phone_call{
-        margin-top: 20px;
-    }
 
 .title{
     text-align: center;

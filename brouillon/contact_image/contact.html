@@ -12,6 +12,91 @@
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 
+    <style>
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            margin: 5rem auto;
+            width: 80%;
+            /* background-color: beige; */
+        }
+        .image, .contact-form{
+            max-height: 32rem;
+            /* box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.7); */
+        }
+        .image{
+            border-left: 1px solid rgba(83, 79, 79, 0.644);
+            border-top: 1px solid rgba(83, 79, 79, 0.644);
+            border-bottom: 1px solid rgba(83, 79, 79, 0.644);
+            width: 30%;
+            border-radius:10px 0 0 10px ;
+        }
+        .img-contact{
+            width: 100%;
+            object-fit: cover;
+            border-radius: 9px 0px 0px 10px;
+            height: 100%;
+        }
+        .contact-form{
+            border: 1px solid rgba(100, 94, 94, 0.644);
+            padding: 0 2rem;
+            border-radius: 0px 10px 10px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .form-control {
+            padding: .3rem;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .btn-default {
+            text-shadow: 0 .1rem .1rem rgba(48, 45, 45, 0.753);
+            font-size: 1rem;
+            font-weight: 600;
+            background-color: #ca9f55ce;
+            color: #fff;
+            border: none;
+            padding: .4rem 1rem;
+            border-radius: .7rem;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            box-shadow: 0 .2rem .2rem rgba(48, 45, 45, 0.384);
+        }
+        
+        .btn-default:hover {
+            background-color: #b9852cd3;
+            color: #fff;
+            box-shadow: 0 .2rem .2rem rgba(48, 45, 45, 0.384);
+        }
+        
+        /* .form-group{
+            margin-top: 1.2rem;
+        } */
+        input, textarea{
+            width: 100%;
+        }
+        .input-action{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: .5rem;
+        }
+        .contact{
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1.1rem;
+        }
+
+        .form-control:focus{
+            outline: none;
+            border: 1px solid #ca9f55ce;
+        }
+        
+    </style>
+
 </head>
 <body>
     <header class="header">
@@ -83,7 +168,7 @@
                 <div class="form-group">
                     <label for="contact-email">Email</label>
                     <input type="email" class="form-control" id="contact-email" name="email"
-                    placeholder="Votre email">
+                    placeholder="xxx@xxx.com">
                     <span class="error-message" id="email-error"></span>
                 </div>
                 <div class="form-group">
@@ -91,12 +176,10 @@
                     <textarea  class="form-control" rows="10" id="contact-message" name="message"
                     placeholder="Votre message"></textarea>
                     <span class="error-message" id="message-error"></span>
+                    <div class="input-action">
+                        <button type="submit" class="btn btn-default">Envoyer</button>
+                    <span class="error-message" id="submit-error"></span>
                 </div>
-            
-                <div class="input-action">
-                    <button type="submit" class="btn btn-default">Envoyer</button>
-                <span class="error-message" id="submit-error"></span>
-            
                 </div> 
             </form>
 
